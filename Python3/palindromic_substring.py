@@ -1,4 +1,14 @@
 
+# Given a string s, return the longest palindromic substring in s.
+#
+# Example:
+#   Input: s = "babad"
+#   Output: "bab" or "aba"
+#
+# Constraints:
+#   - 1 <= s.length <= 1000
+#   - s consist of only digits and English letters.
+
 # Expand out from the lower and upper pointers until we're no longer a
 # palindrome, then return the biggest palindrom we could find from the
 # given bounds

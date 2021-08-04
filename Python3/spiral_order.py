@@ -1,5 +1,23 @@
 from typing import List
 
+# Given an m x n matrix, return all elements of the matrix in spiral order.
+#         GRID                    SPIRAL
+#     | 1  2  3  4  5  |    | -> -> -> -> v  |
+#     | 6  7  8  9  10 |    | -> -> -> v  v  |
+#     | 11 12 13 14 15 |    | ^  -> v  v  v  |
+#     | 16 17 18 19 20 |    | ^  ^  x  v  v  |
+#     | 21 22 23 24 25 |    | ^  ^  <- <- v  |
+#     | 26 27 28 29 30 |    | ^  <- <- <- <- |
+#
+# Order:    1,2,3,4,5,10,15,20,25,30,29,28,27,26,21,
+#           16,11,6,7,8,9,14,19,24,23,22,17,12,13,18
+#
+# Constraints:
+#   - m == matrix.length
+#   - n == matrix[i].length
+#   - 1 <= m, n <= 10
+#   - -100 <= matrix[i][j] <= 100
+
 
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
